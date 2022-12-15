@@ -14,7 +14,27 @@ public class N2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        teste();
+
     }
-    
+
+    static void teste() {
+        //Instanciação das classes para teste
+        var lab = new Classroom(2, "Laboratório de Informática 1", 5);
+        var bd = new Subject("Banco de dados", "123", "ADS",
+                4, "Jamile", 'M', "Quarta",
+                lab.getId(), "ABCD");
+
+        //Manipulação de SALA DE AULA
+        lab.setResponsible("Juvenildo");
+        //lab.setStatus("Disponível");
+        lab.setAsReserved();
+
+        //Manipulação de DISCIPLINA
+        bd.setShift('T');
+
+        //System.out.println(lab.toString());
+        System.out.println(bd.toString());
+    }
+
 }
