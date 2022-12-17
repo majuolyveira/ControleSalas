@@ -28,17 +28,13 @@ public class CadastrarSalas extends javax.swing.JFrame {
 
         Cadastrar_Salas = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         Button_cadastrar = new javax.swing.JButton();
-        Caixa_text_id = new javax.swing.JTextField();
         Caixa_text_bloco = new javax.swing.JTextField();
         Caixa_text_numero = new javax.swing.JTextField();
-        Caixa_text_resposavel = new javax.swing.JTextField();
         select_lab = new javax.swing.JRadioButton();
         select_sala = new javax.swing.JRadioButton();
         ComboBox_status = new javax.swing.JComboBox<>();
@@ -48,8 +44,6 @@ public class CadastrarSalas extends javax.swing.JFrame {
 
         jLabel1.setText("Cadastrar Salas");
 
-        jLabel2.setText("Identificador da sala: ");
-
         jLabel3.setText("Bloco: ");
 
         jLabel4.setText("Número: ");
@@ -58,12 +52,16 @@ public class CadastrarSalas extends javax.swing.JFrame {
 
         jLabel6.setText("Status da Sala:");
 
-        jLabel7.setText("Responsável:");
-
         Button_cadastrar.setText("Cadastrar");
         Button_cadastrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Button_cadastrarActionPerformed(evt);
+            }
+        });
+
+        Caixa_text_numero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Caixa_text_numeroActionPerformed(evt);
             }
         });
 
@@ -99,13 +97,11 @@ public class CadastrarSalas extends javax.swing.JFrame {
                         .addGap(26, 26, 26))
                     .addGroup(Cadastrar_SalasLayout.createSequentialGroup()
                         .addGroup(Cadastrar_SalasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
                             .addComponent(jLabel3)
                             .addComponent(jLabel4)
                             .addComponent(jLabel5)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel7))
-                        .addGap(35, 35, 35)
+                            .addComponent(jLabel6))
+                        .addGap(73, 73, 73)
                         .addGroup(Cadastrar_SalasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
                             .addGroup(Cadastrar_SalasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -114,10 +110,8 @@ public class CadastrarSalas extends javax.swing.JFrame {
                                     .addComponent(select_lab)
                                     .addGap(18, 18, 18)
                                     .addComponent(select_sala))
-                                .addComponent(Caixa_text_id, javax.swing.GroupLayout.DEFAULT_SIZE, 240, Short.MAX_VALUE)
-                                .addComponent(Caixa_text_bloco)
-                                .addComponent(Caixa_text_numero)
-                                .addComponent(Caixa_text_resposavel)))
+                                .addComponent(Caixa_text_bloco, javax.swing.GroupLayout.DEFAULT_SIZE, 240, Short.MAX_VALUE)
+                                .addComponent(Caixa_text_numero)))
                         .addContainerGap(87, Short.MAX_VALUE))))
         );
         Cadastrar_SalasLayout.setVerticalGroup(
@@ -125,16 +119,10 @@ public class CadastrarSalas extends javax.swing.JFrame {
             .addGroup(Cadastrar_SalasLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(42, 42, 42)
+                .addGap(78, 78, 78)
                 .addGroup(Cadastrar_SalasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(Cadastrar_SalasLayout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel3))
-                    .addGroup(Cadastrar_SalasLayout.createSequentialGroup()
-                        .addComponent(Caixa_text_id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Caixa_text_bloco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel3)
+                    .addComponent(Caixa_text_bloco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(Cadastrar_SalasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
@@ -148,15 +136,11 @@ public class CadastrarSalas extends javax.swing.JFrame {
                 .addGroup(Cadastrar_SalasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(ComboBox_status, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(Cadastrar_SalasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(Caixa_text_resposavel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(54, 54, 54)
+                .addGap(93, 93, 93)
                 .addGroup(Cadastrar_SalasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Button_cadastrar)
                     .addComponent(Button_voltar))
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -183,11 +167,25 @@ public class CadastrarSalas extends javax.swing.JFrame {
 
     private void Button_voltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_voltarActionPerformed
         // TODO add your handling code here:
-        Salas frame = new Salas();
+        Home frame = new Home();
         frame.setVisible(true);
 
         this.dispose();
     }//GEN-LAST:event_Button_voltarActionPerformed
+
+    private void Caixa_text_numeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Caixa_text_numeroActionPerformed
+        // TODO add your handling code here:
+//        float numero;
+//        numero = Float.valueOf(this.Caixa_text_numero.getText());
+//        
+//        
+//        if(numero >= 0 ){
+//            
+//        }else{
+//            Caixa_text_numero.setText("Valor inválido");
+//        }
+        
+    }//GEN-LAST:event_Caixa_text_numeroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -229,17 +227,13 @@ public class CadastrarSalas extends javax.swing.JFrame {
     private javax.swing.JButton Button_voltar;
     private javax.swing.JPanel Cadastrar_Salas;
     private javax.swing.JTextField Caixa_text_bloco;
-    private javax.swing.JTextField Caixa_text_id;
     private javax.swing.JTextField Caixa_text_numero;
-    private javax.swing.JTextField Caixa_text_resposavel;
     private javax.swing.JComboBox<String> ComboBox_status;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JRadioButton select_lab;
     private javax.swing.JRadioButton select_sala;
     // End of variables declaration//GEN-END:variables

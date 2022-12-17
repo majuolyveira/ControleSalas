@@ -32,9 +32,7 @@ public class AtualizarDisc extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -47,11 +45,7 @@ public class AtualizarDisc extends javax.swing.JFrame {
 
         jLabel3.setText("Informações cadastrais: ");
 
-        jButton2.setText("Editar");
-
         jButton3.setText("Salvar");
-
-        jButton4.setText("Cancelar");
 
         jButton5.setText("Voltar");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -72,6 +66,10 @@ public class AtualizarDisc extends javax.swing.JFrame {
                     .addGroup(Atualizar_discLayout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addGroup(Atualizar_discLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(Atualizar_discLayout.createSequentialGroup()
+                                .addComponent(jButton3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 493, Short.MAX_VALUE)
+                                .addComponent(jButton5))
                             .addComponent(jLabel3)
                             .addGroup(Atualizar_discLayout.createSequentialGroup()
                                 .addComponent(jLabel2)
@@ -80,15 +78,7 @@ public class AtualizarDisc extends javax.swing.JFrame {
                                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(Atualizar_discLayout.createSequentialGroup()
                                         .addGap(39, 39, 39)
-                                        .addComponent(jButton1))))
-                            .addGroup(Atualizar_discLayout.createSequentialGroup()
-                                .addComponent(jButton2)
-                                .addGap(45, 45, 45)
-                                .addComponent(jButton3)
-                                .addGap(47, 47, 47)
-                                .addComponent(jButton4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
-                                .addComponent(jButton5)))))
+                                        .addComponent(jButton1)))))))
                 .addGap(40, 40, 40))
         );
         Atualizar_discLayout.setVerticalGroup(
@@ -104,11 +94,9 @@ public class AtualizarDisc extends javax.swing.JFrame {
                 .addComponent(jButton1)
                 .addGap(36, 36, 36)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 226, Short.MAX_VALUE)
                 .addGroup(Atualizar_discLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
                     .addComponent(jButton3)
-                    .addComponent(jButton4)
                     .addComponent(jButton5))
                 .addGap(33, 33, 33))
         );
@@ -129,7 +117,7 @@ public class AtualizarDisc extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        Disciplinas frame = new Disciplinas();
+        Home frame = new Home();
         frame.setVisible(true);
 
         this.dispose();
@@ -173,9 +161,7 @@ public class AtualizarDisc extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Atualizar_disc;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
